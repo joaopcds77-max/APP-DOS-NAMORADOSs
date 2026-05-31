@@ -1,0 +1,27 @@
+{
+  "entities": {
+    "surpresas": {
+      "title": "Surpresas",
+      "description": "Configurações de surpresas de Dia dos Namorados",
+      "type": "object",
+      "properties": {
+        "partner1": { "type": "string", "description": "Nome do primeiro parceiro" },
+        "partner2": { "type": "string", "description": "Nome do segundo parceiro" },
+        "startDate": { "type": "string", "format": "date-time", "description": "Data de início do relacionamento" },
+        "musicTitle": { "type": "string", "description": "Título da música tema" },
+        "musicArtist": { "type": "string", "description": "Nome do artista" },
+        "history": { "type": "string", "description": "História bruta digitada pelo casal" },
+        "photos": { "type": "array", "description": "Lista de URLs das fotos hospedadas no Firebase Storage" },
+        "declaracao_ia": { "type": "string", "description": "Homenagem romântica poética criada pelo Gemini" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Data de criação do documento" }
+      },
+      "required": ["partner1", "partner2", "startDate", "musicTitle", "history", "photos", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/surpresas/{surpresaId}": {
+      "schema": "surpresas",
+      "description": "Documentos individuais das surpresas românticas de casais"
+    }
+  }
+}

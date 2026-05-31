@@ -1,0 +1,6 @@
+{
+  "name": "Web App do Dia dos Namorados",
+  "description": "Criador de presentes virtuais românticos para o Dia dos Namorados com cronômetro de relacionamento, carrossel de fotos, música e declaração gerada por IA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
